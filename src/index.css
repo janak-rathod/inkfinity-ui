@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink text-paper font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display uppercase tracking-tight text-paper;
+  }
+
+  /* Visible keyboard focus everywhere - accessibility floor, not optional. */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid theme('colors.accent.DEFAULT');
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto max-w-content px-5 sm:px-8;
+  }
+
+  /* One filled-accent button per view - this is it. */
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-accent px-6 py-3
+           text-sm font-bold uppercase tracking-wide text-ink transition-colors
+           hover:bg-accent-hover active:bg-accent/80;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md border border-line
+           px-6 py-3 text-sm font-semibold uppercase tracking-wide text-paper
+           transition-colors hover:border-accent/60 hover:text-accent;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-accent;
+  }
+
+  .tag-chip {
+    @apply inline-flex items-center rounded-full border border-accent/40 bg-accent-muted
+           px-2.5 py-1 text-[11px] font-medium uppercase tracking-wide text-accent;
+  }
+
+  .filter-chip {
+    @apply rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-wide
+           transition-colors;
+  }
+
+  .filter-chip-active {
+    @apply border-accent bg-accent text-ink;
+  }
+
+  .filter-chip-inactive {
+    @apply border-line bg-transparent text-muted hover:border-accent/60 hover:text-paper;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-xs font-semibold uppercase tracking-wide text-muted;
+  }
+
+  .field-input {
+    @apply w-full rounded-md border border-line bg-charcoal px-4 py-3 text-paper
+           placeholder:text-muted/60 transition-colors focus:border-accent;
+  }
+
+  .field-error {
+    @apply mt-1 text-sm text-accent;
+  }
+
+  .card {
+    @apply rounded-card border border-line bg-charcoal shadow-card;
+  }
+}
+
+/* Signature element: the "single line" motif that runs through the hero
+   and reappears as a section divider - see components/SectionDivider.jsx.
+   Draws itself in on first paint via stroke-dashoffset. */
+.line-draw path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw-line 1.8s ease forwards;
+}
+
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
