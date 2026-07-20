@@ -8,7 +8,7 @@ import SectionDivider from '../components/SectionDivider.jsx'
 import { api } from '../api/client.js'
 
 const HIGHLIGHTS = [
-  { label: 'Years experience', value: '8+' },
+  { label: 'Years experience', value: '4+' },
   { label: 'Main styles', value: 'Fine line · Realism · Minimal' },
   { label: 'Focus', value: 'Hygiene-first, single-use needles' }
 ]
@@ -25,8 +25,8 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="Inkfinity Studio — Fine Line & Custom Tattoos in Ahmedabad"
-        description="Fine line, realism, minimal and custom sketch tattoo work in Ahmedabad, Gujarat. Hygiene-first studio — book a session or request a custom sketch."
+        title="Inkfinity Studio — Fine Line & Custom Tattoos in Surat"
+        description="Fine line, realism, minimal and custom sketch tattoo work in Surat, Gujarat. Hygiene-first studio — book a session or request a custom sketch."
       />
 
       <HeroSection />

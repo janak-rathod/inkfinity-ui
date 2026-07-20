@@ -17,8 +17,8 @@ export default function ServicesPage() {
   return (
     <>
       <SEO
-        title="Services & Pricing — Inkfinity Studio, Ahmedabad"
-        description="Custom tattoo design, cover-ups, flash pieces and commissioned sketches at Inkfinity Studio, Ahmedabad. See starting prices and book a session."
+        title="Services & Pricing — Inkfinity Studio, Surat"
+        description="Custom tattoo design, cover-ups, flash pieces and commissioned sketches at Inkfinity Studio, Surat. See starting prices and book a session."
       />
 
       <section className="container-page py-14">

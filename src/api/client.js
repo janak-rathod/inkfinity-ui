@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://api.janakrathod.com/api'
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://inkfinity.api.janakrathod.com/api'
 
 /**
  * Thin wrapper around fetch for the backend API. Throws an ApiError with

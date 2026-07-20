@@ -11,7 +11,7 @@ export default defineConfig({
     // src/api/client.js uses an explicit base URL from .env instead.
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'http://localhost:8787',
         changeOrigin: true
       }
     }

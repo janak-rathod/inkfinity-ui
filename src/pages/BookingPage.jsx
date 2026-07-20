@@ -5,8 +5,8 @@ export default function BookingPage() {
   return (
     <>
       <SEO
-        title="Book a Session — Inkfinity Studio, Ahmedabad"
-        description="Request a tattoo or sketch session at Inkfinity Studio in Ahmedabad. Pick a service type, style preference and preferred date and time."
+        title="Book a Session — Inkfinity Studio, Surat"
+        description="Request a tattoo or sketch session at Inkfinity Studio in Surat. Pick a service type, style preference and preferred date and time."
       />
 
       <section className="container-page py-14">

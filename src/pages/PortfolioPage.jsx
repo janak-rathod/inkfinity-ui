@@ -22,8 +22,8 @@ export default function PortfolioPage() {
   return (
     <>
       <SEO
-        title="Portfolio — Inkfinity Studio, Ahmedabad"
-        description="Browse fine line, realism, minimal, blackwork and custom sketch tattoo work from Inkfinity Studio in Ahmedabad."
+        title="Portfolio — Inkfinity Studio, Surat"
+        description="Browse fine line, realism, minimal, blackwork and custom sketch tattoo work from Inkfinity Studio in Surat."
       />
 
       <section className="container-page py-14">

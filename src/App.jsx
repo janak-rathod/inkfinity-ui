@@ -8,6 +8,7 @@ import ContactPage from './pages/ContactPage.jsx'
 import BookingPage from './pages/BookingPage.jsx'
 import FaqPage from './pages/FaqPage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
+import AdminGalleryPage from './pages/AdminGalleryPage.jsx'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/book" element={<BookingPage />} />
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="/admin" element={<AdminGalleryPage />} />
       </Route>
     </Routes>
   )

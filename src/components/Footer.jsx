@@ -9,7 +9,7 @@ export default function Footer() {
             Inkfinity <span className="text-accent">Studio</span>
           </p>
           <p className="mt-3 max-w-xs text-sm text-muted">
-            Fine line, realism &amp; custom sketch tattoo work in Ahmedabad, Gujarat.
+            Fine line, realism &amp; custom sketch tattoo work in Surat, Gujarat.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export default function Footer() {
           <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted">Studio</p>
           {/* TODO: replace with your real address, phone, email and hours */}
           <address className="space-y-2 text-sm not-italic text-paper/80">
-            <p>Satellite Road, Ahmedabad, Gujarat 380015</p>
+            <p>Satellite Road, Surat, Gujarat 380015</p>
             <p><a href="tel:+919000000000" className="hover:text-accent">+91 90000 00000</a></p>
             <p><a href="mailto:hello@Inkfinitystudio.in" className="hover:text-accent">hello@Inkfinitystudio.in</a></p>
             <p>Tue–Sun, 11am–8pm · Closed Mondays</p>
@@ -47,7 +47,7 @@ export default function Footer() {
 
       <div className="border-t border-line py-5">
         <p className="container-page text-xs text-muted">
-          © {new Date().getFullYear()} Inkfinity Studio, Ahmedabad. All rights reserved.
+          © {new Date().getFullYear()} Inkfinity Studio, Surat. All rights reserved.
         </p>
       </div>
     </footer>

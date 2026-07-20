@@ -3,7 +3,7 @@ import ArtistCard from '../components/ArtistCard.jsx'
 
 // TODO: replace with your real artists
 const ARTISTS = [
-  { name: 'Studio Founder', specialty: 'Fine line & minimal', photoUrl: '/images/artists/founder.jpg', bio: 'Started Inkfinity Studio to bring a calmer, more custom approach to tattooing in Ahmedabad.' },
+  { name: 'Studio Founder', specialty: 'Fine line & minimal', photoUrl: '/public/images/portfolio/artist.jpeg', bio: 'Started Inkfinity Studio to bring a calmer, more custom approach to tattooing in Surat.' },
   { name: 'Guest Artist', specialty: 'Realism & blackwork', photoUrl: '/images/artists/guest.jpg', bio: 'Specializes in black & grey realism and larger geometric blackwork pieces.' }
 ]
 
@@ -11,14 +11,14 @@ export default function AboutPage() {
   return (
     <>
       <SEO
-        title="About — Inkfinity Studio, Ahmedabad"
-        description="Meet the artists behind Inkfinity Studio in Ahmedabad and learn about our hygiene standards and approach to custom tattoo design."
+        title="About — Inkfinity Studio, Surat"
+        description="Meet the artists behind Inkfinity Studio in Surat and learn about our hygiene standards and approach to custom tattoo design."
       />
 
       <section className="container-page py-14">
         <p className="eyebrow">About the studio</p>
         <h1 className="mt-2 max-w-2xl text-4xl">
-          Based in Ahmedabad, built around custom design and careful craft.
+          Based in Surat, built around custom design and careful craft.
         </h1>
         {/* TODO: replace with your real studio story */}
         <p className="mt-5 max-w-2xl font-body normal-case text-muted">

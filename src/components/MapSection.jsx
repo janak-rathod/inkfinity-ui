@@ -5,7 +5,7 @@ export default function MapSection() {
           (Google Maps > Share > Embed a map > copy the src of the iframe) */}
       <iframe
         title="Inkfinity Studio location"
-        src="https://www.google.com/maps?q=Ahmedabad,Gujarat&output=embed"
+        src="https://www.google.com/maps?q=Surat,Gujarat&output=embed"
         className="h-full w-full border-0 grayscale invert-[0.9] contrast-[1.1]"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"

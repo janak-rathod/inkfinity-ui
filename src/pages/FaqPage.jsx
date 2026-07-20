@@ -13,8 +13,8 @@ export default function FaqPage() {
   return (
     <>
       <SEO
-        title="Hygiene & FAQs — Inkfinity Studio, Ahmedabad"
-        description="Answers on hygiene and sterilization, pain, session length, aftercare, touch-ups and rescheduling at Inkfinity Studio, Ahmedabad."
+        title="Hygiene & FAQs — Inkfinity Studio, Surat"
+        description="Answers on hygiene and sterilization, pain, session length, aftercare, touch-ups and rescheduling at Inkfinity Studio, Surat."
       />
 
       <section className="container-page py-14">

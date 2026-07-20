@@ -6,8 +6,8 @@ export default function ContactPage() {
   return (
     <>
       <SEO
-        title="Contact — Inkfinity Studio, Ahmedabad"
-        description="Get in touch with Inkfinity Studio in Ahmedabad, Gujarat — address, phone, email, working hours and a contact form for general inquiries."
+        title="Contact — Inkfinity Studio, Surat"
+        description="Get in touch with Inkfinity Studio in Surat, Gujarat — address, phone, email, working hours and a contact form for general inquiries."
       />
 
       <section className="container-page py-14">
@@ -24,7 +24,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-sm font-semibold uppercase tracking-wide text-paper">Studio</h2>
               <address className="mt-2 space-y-1 text-sm font-body normal-case not-italic text-muted">
-                <p>Satellite Road, Ahmedabad, Gujarat 380015</p>
+                <p>Satellite Road, Surat, Gujarat 380015</p>
                 <p><a href="tel:+919000000000" className="hover:text-accent">+91 90000 00000</a></p>
                 <p><a href="mailto:hello@Inkfinitystudio.in" className="hover:text-accent">hello@Inkfinitystudio.in</a></p>
                 <p>Tue–Sun, 11am–8pm · Closed Mondays</p>
