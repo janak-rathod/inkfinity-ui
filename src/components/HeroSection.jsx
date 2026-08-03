@@ -5,7 +5,7 @@ import SectionDivider from './SectionDivider.jsx'
 // TODO: replace these four with real studio/tattoo photography.
 // See public/images/README.txt for the expected folder.
 const COLLAGE_IMAGES = [
-  { src: '/public/images/hero/coverup.png', alt: 'Studio artist tattooing a client' }
+  { src: '/images/hero/coverup.png', alt: 'Studio artist tattooing a client' }
 ]
 
 export default function HeroSection() {
@@ -42,7 +42,7 @@ export default function HeroSection() {
       </div>
 
       <div className="container-page relative flex min-h-[86vh] flex-col justify-end gap-6 pb-16 pt-30 sm:min-h-[80vh]">
-        <p className="eyebrow">Ahmedabad, Gujarat</p>
+        <p className="eyebrow">Surat, Gujarat</p>
         <h1 className="max-w-2xl text-5xl leading-[0.95] sm:text-6xl md:text-7xl">
           Ink that means <span className="text-accent">something</span>.
         </h1>

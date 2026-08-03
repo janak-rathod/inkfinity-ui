@@ -6,7 +6,7 @@ import { api } from '../api/client.js'
 
 // TODO: replace with your real artists
 const ARTISTS = [
-  { name: 'Studio Founder', specialty: 'Fine line & minimal', photoUrl: '/public/images/portfolio/artist.jpeg', bio: 'Started Inkfinity Studio to bring a calmer, more custom approach to tattooing in Surat.' }
+  { name: 'Studio Founder', specialty: 'Fine line & minimal', photoUrl: '/images/portfolio/artist.jpeg', bio: 'Started Inkfinity Studio to bring a calmer, more custom approach to tattooing in Surat.' }
 ]
 
 const EXPERIENCE_STATS = [
