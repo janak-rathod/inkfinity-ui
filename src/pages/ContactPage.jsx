@@ -24,19 +24,10 @@ export default function ContactPage() {
             <div>
               <h2 className="text-sm font-semibold uppercase tracking-wide text-paper">Studio</h2>
               <address className="mt-2 space-y-1 text-sm font-body normal-case not-italic text-muted">
-                <p>Satellite Road, Surat, Gujarat 380015</p>
-                <p><a href="tel:+919000000000" className="hover:text-accent">+91 90000 00000</a></p>
-                <p><a href="mailto:hello@Inkfinitystudio.in" className="hover:text-accent">hello@Inkfinitystudio.in</a></p>
-                <p>Tue–Sun, 11am–8pm · Closed Mondays</p>
+                <p>G-09, SHREENATHJI ICON VIP CIRCLE OPP. POWER HOUSE,UTTRAN,SURAT</p>
+                <p><a href="tel:+917600589307" className="hover:text-accent">+91 76005 89307</a></p>
+                <p>Mon–Sat, 10 AM – 08 PM</p>
               </address>
-            </div>
-
-            <div>
-              <h2 className="text-sm font-semibold uppercase tracking-wide text-paper">Follow</h2>
-              <ul className="mt-2 space-y-1 text-sm font-body normal-case text-muted">
-                <li><a href="https://instagram.com/" target="_blank" rel="noreferrer" className="hover:text-accent">Instagram</a></li>
-                <li><a href="https://wa.me/919000000000" target="_blank" rel="noreferrer" className="hover:text-accent">WhatsApp</a></li>
-              </ul>
             </div>
 
             <MapSection />

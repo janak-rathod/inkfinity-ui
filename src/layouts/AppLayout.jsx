@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
+import WhyChooseUs from '../components/WhyChooseUs.jsx'
 
 export default function AppLayout() {
   return (
@@ -14,6 +15,7 @@ export default function AppLayout() {
       <Navbar />
       <main id="main-content" className="flex-1">
         <Outlet />
+        <WhyChooseUs />
       </main>
       <Footer />
     </div>
