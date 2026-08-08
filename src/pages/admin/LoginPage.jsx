@@ -30,11 +30,11 @@ export default function LoginPage() {
 
   return (
     <>
-      <SEO title="Admin Login — Inkline Studio" />
+      <SEO title="Admin Login — Inkfinity Studio" />
       <div className="flex min-h-screen items-center justify-center bg-ink px-4">
         <div className="w-full max-w-sm rounded-card border border-line bg-charcoal/80 p-8 backdrop-blur-sm">
           <p className="font-display text-lg uppercase tracking-tight">
-            Inkline <span className="text-accent">Studio</span>
+            Inkfinity <span className="text-accent">Studio</span>
           </p>
           <h1 className="mt-4 text-2xl">Admin Login</h1>
           <p className="mt-1 text-sm text-muted">Sign in to view bookings and contact messages.</p>
