@@ -47,7 +47,7 @@ export default function AdminDashboardPage() {
 
   return (
     <>
-      <SEO title="Admin Dashboard — Inkline Studio" />
+      <SEO title="Admin Dashboard — Inkfinity Studio" />
 
       <p className="eyebrow">Admin</p>
       <h1 className="mt-2 text-3xl">Bookings &amp; Contact Messages</h1>

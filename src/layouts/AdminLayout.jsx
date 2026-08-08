@@ -14,7 +14,7 @@ export default function AdminLayout() {
       <header className="border-b border-line bg-charcoal">
         <div className="container-page flex h-16 items-center justify-between">
           <p className="font-display text-lg uppercase tracking-tight">
-            Inkline <span className="text-accent">Studio</span>
+            Inkfinity <span className="text-accent">Studio</span>
             <span className="ml-2 text-xs font-body normal-case tracking-normal text-muted">Admin</span>
           </p>
           {adminAuth.isLoggedIn() && (

@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
     <section className="bg-charcoal py-16">
       <div className="container-page">
         <p className="eyebrow">Why choose us</p>
-        <h2 className="mt-2 text-3xl">What makes Inkline different</h2>
+        <h2 className="mt-2 text-3xl">What makes Inkfinity different</h2>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {REASONS.map((reason) => (
