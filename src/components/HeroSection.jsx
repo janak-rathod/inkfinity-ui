@@ -12,11 +12,14 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-charcoal">
       {/* Mobile / fallback background - single full-bleed image behind a dark gradient. */}
-      {/* <div
-        className="absolute inset-0 bg-cover bg-center opacity-40 md:hidden"
-        style={{ backgroundImage: "url('/public/images/hero/coverup.png')" }}
-        aria-hidden="true"
-      /> */}
+      { <div
+  className="absolute inset-0 bg-no-repeat md:hidden"
+  style={{
+    backgroundImage: "url('/images/hero/coverup.png')",
+    backgroundPosition: "center",
+  }}
+  aria-hidden="true"
+/> }
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/80 to-ink/30 md:bg-gradient-to-r md:from-ink md:via-ink/70 md:to-ink/10" aria-hidden="true" />
 
       {/* Desktop / tablet - diagonal collage of 3 images bleeding off the right edge. */}
@@ -41,7 +44,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-ink/10" />
       </div>
 
-      <div className="container-page relative flex min-h-[86vh] flex-col justify-end gap-6 pb-16 pt-30 sm:min-h-[80vh]">
+      <div class="container-page relative flex min-h-[65vh] flex-col justify-end gap-4 pb-8 pt-16 sm:min-h-[80vh] sm:gap-6 sm:pb-16 sm:pt-30">
         <p className="eyebrow">Surat, Gujarat</p>
         <h1 className="max-w-2xl text-5xl leading-[0.95] sm:text-6xl md:text-7xl">
           Ink that means <span className="text-accent">something</span>.
