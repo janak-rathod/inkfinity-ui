@@ -44,7 +44,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-ink/10" />
       </div>
 
-      <div class="container-page relative flex min-h-[65vh] flex-col justify-end gap-4 pb-8 pt-16 sm:min-h-[80vh] sm:gap-6 sm:pb-16 sm:pt-30">
+      <div className="container-page relative flex min-h-[65vh] flex-col justify-end gap-4 pb-8 pt-16 sm:min-h-[80vh] sm:gap-6 sm:pb-16 sm:pt-30">
         <p className="eyebrow">Surat, Gujarat</p>
         <h1 className="max-w-2xl text-5xl leading-[0.95] sm:text-6xl md:text-7xl">
           Ink that means <span className="text-accent">something</span>.

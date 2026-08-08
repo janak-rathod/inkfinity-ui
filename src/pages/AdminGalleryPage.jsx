@@ -24,17 +24,6 @@ export default function AdminGalleryPage() {
 
   useEffect(() => { fetchItems() }, [fetchItems])
 
-  const handleUnlock = (e) => {
-    e.preventDefault()
-    sessionStorage.setItem('admin_token', tokenInput)
-    setToken(tokenInput)
-  }
-
-  const handleLogout = () => {
-    sessionStorage.removeItem('admin_token')
-    setToken('')
-  }
-
   const handleUpload = async (e) => {
     e.preventDefault()
     setError('')
@@ -54,16 +43,11 @@ export default function AdminGalleryPage() {
 
     try {
       const res = await fetch(`${API_BASE}/gallery`, {
-        method: 'POST',
-        headers: { 'X-Admin-Token': token }, // do NOT set Content-Type — browser sets multipart boundary automatically
+        method: 'POST', // do NOT set Content-Type — browser sets multipart boundary automatically
         body: data,
       })
 
-      if (res.status === 403) {
-        setError('Invalid admin token — please log in again.')
-        handleLogout()
-        return
-      }
+      
       if (!res.ok) throw new Error('Upload failed. Please try again.')
 
       setSuccess('Uploaded successfully.')
@@ -96,34 +80,10 @@ export default function AdminGalleryPage() {
     }
   }
 
-  if (!token) {
-    return (
-      <div className="mx-auto mt-24 max-w-sm p-6">
-        <h1 className="mb-4 font-display text-xl text-paper">Admin Access</h1>
-        <form onSubmit={handleUnlock} className="space-y-3">
-          <input
-            type="password"
-            placeholder="Admin token"
-            value={tokenInput}
-            onChange={(e) => setTokenInput(e.target.value)}
-            className="w-full rounded-card border border-line bg-charcoal p-2 text-paper"
-            required
-          />
-          <button type="submit" className="w-full rounded-card bg-accent p-2 text-ink">
-            Unlock
-          </button>
-        </form>
-      </div>
-    )
-  }
-
   return (
     <div className="mx-auto max-w-4xl p-6">
       <div className="mb-6 flex items-center justify-between">
         <h1 className="font-display text-xl text-paper">Manage Gallery</h1>
-        <button onClick={handleLogout} className="text-sm text-muted hover:text-accent">
-          Log out
-        </button>
       </div>
 
       <form onSubmit={handleUpload} className="mb-10 space-y-3 rounded-card border border-line p-4">
